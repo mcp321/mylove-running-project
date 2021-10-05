@@ -1,22 +1,36 @@
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Open+Sans&display=swap');
+Skip to content
+Code-Institute-Solutions
+/
+love-running-2.0-sourcecode
+Public
+Code
+Issues
+Pull requests
+Actions
+More
+love-running-2.0-sourcecode/04-creating-the-club-ethos/02-club-ethos-left-content/assets/css/style.css
+@AJGreaves
+AJGreaves Add source code for club ethos left about content lesson.
+ 1 contributor
+152 lines (120 sloc)  2.24 KB
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald&display=swap');
 
-*{margin:0;
-padding: 0;
-border: none;
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
 }
 
-body{
+body {
     font-family: Lato, sans-serif;
     font-weight: 300;
     color: #3a3a3a;
-
-
 }
 
 /* headings and logo */
 
 h1, h2 {
-    font-family: open sans, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
     color: #252525;
@@ -25,17 +39,21 @@ h1, h2 {
 #logo {
     float: left;
     font-size: 280%;
+    margin-left: 30px;
 }
+
+/* navigation links */
+
 #menu {
     font-size: 110%;
     letter-spacing: 4px;
 }
 
-#menu, #logo{
+#menu, #logo {
     line-height: 75px;
 }
 
-#menu li{
+#menu li {
     float: right;
     list-style-type: none;
     margin-right: 30px;
@@ -46,13 +64,16 @@ h1, h2 {
     color: inherit;
 }
 
-#menu a:hover{
+#menu a:hover {
     border-bottom: 1px solid #3a3a3a;
 }
 
 .active {
     border-bottom: 1px solid #3a3a3a;
 }
+
+/* hero image and cover text */
+
 #hero-outer {
     height: 600px;
     width: 100%;
@@ -61,7 +82,7 @@ h1, h2 {
     position: relative;
 }
 
-#cover-text, #cover-text h2{
+#cover-text, #cover-text h2 {
     color: #fff;
 }
 
@@ -70,16 +91,15 @@ h1, h2 {
     width: 100%;
     background: url('../images/hero-image.webp') no-repeat center center;
 
-
-animation-name: hero-zoom;
-animation-duration: 5s;
-animation-fill-mode: forwards;
+    /* animates zoom effect on loading page */
+    animation-name: hero-zoom;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
 }
 
-  
-       
+/* creates the level of zoom for hero image */
 @keyframes hero-zoom {
-    from {
+    from{
         transform: scale(1);
     }
     to{
@@ -89,10 +109,10 @@ animation-fill-mode: forwards;
 
 #cover-text {
     font-size: 130%;
-    font-family: open-sans, sans-serif;
+    font-family: Oswald, sans-serif;
     text-transform: uppercase;
     letter-spacing: 4px;
-    
+
     width: 300px;
     height: 200px;
 
@@ -106,4 +126,30 @@ animation-fill-mode: forwards;
 
     position: absolute;
 }
-    
+
+/* club ethos */
+
+#club-ethos {
+    height: 600px;
+}
+
+#left-about {
+    padding-top: 30px;
+    width: 33%;
+    float: left;
+    background-color: blue;
+}
+
+#right-about {
+    padding-top: 30px;
+    width: 33%;
+    float: right;
+    background-color: silver;
+}
+
+#center-about {
+    width: 33%;
+    margin: 0 auto;
+    background-color: green;
+}
+
